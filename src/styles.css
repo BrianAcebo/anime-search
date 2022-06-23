@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+
+  a, p, input, span, div, textarea, button {
+    @apply font-sans;
+  }
+}
+
+
+:root {
+  --dark-mode: #1E293B;
+  --text-white: #ffffff;
+}
+
+
+/* General site styles */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  background: var(--dark-mode);
+  width: 100vw;
+  color: var(--text-white);
+  min-height: 100vh;
+}
+/* /General site styles */
