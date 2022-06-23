@@ -5,7 +5,7 @@
 </script>
 
 <div class="{!$openSideNav ? 'right-[-100%]' : 'right-0'} top-0 absolute w-full h-screen bg-dark drop-shadow-lg ease-in-out duration-300 z-10">
-    <div class="flex flex-col pt-24 justify-between items-center w-full h-[75vh]" on:click={() => openSideNav.set(!openSideNav)}>
+    <div class="flex flex-col pt-24 justify-between items-center w-full h-[75vh]">
         <NavLinks />
 
         <SearchBar />

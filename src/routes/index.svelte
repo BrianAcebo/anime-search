@@ -6,7 +6,7 @@
   import { onMount } from 'svelte';
   import anime from 'animejs';
   
-  const tinyTitle = 'Welcome to the anime search engine';
+  const tinyTitle = 'The anime search engine';
   const heroTitle = 'Easily find anime';
   const description = 'Search anime to find the exact moment and episode all by simply uploading an image.';
 
@@ -86,7 +86,8 @@
   });
 </script>
 
-<svelte:window bind:innerHeight={innerHeight} bind:innerWidth={innerWidth} />
+
+<div class="h-screen overflow-y-hidden max-h-[100vh]">
 
 
 <img id="svg1" class="hero_svg w-[12rem] h-[12rem] md:w-[20rem] md:h-[20rem] absolute top-[-25px] right-[-50px] z-0" src="/img/site/assets/home1.svg">
@@ -116,4 +117,7 @@
   />
 
   {/if}
+</div>
+
+
 </div>
